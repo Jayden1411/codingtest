@@ -6,7 +6,7 @@
  </head>
   <body>
 	    
-		<div class="card-body col-10 offset-1">	
+		<div class="card-body col-12">	
 				<?php
 				    $dbh = Db::db_connect();
 				    $vacancies= ApiData::getData('getAdverts', "");
