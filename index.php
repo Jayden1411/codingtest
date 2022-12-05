@@ -171,5 +171,23 @@ $(document).ready(function() {
 	});
     });
 </script>
+      <script>
+	$(document).ready(function () {
+		 $('.click-call').on('click', function (e) {
+		 var ref = $(this).attr("data-id");
+		 $.ajax({
+			method: "POST",
+			url: "addclick.php",
+			 data: {
+				ref: $(this).attr("data-id")
+			    },success: function(data){
+				if(data.statusCode==200){
+					console.log('RESPONSE '+data);
+				}
+			}
+		});
+		});		
+	});
+</script>
 </body>
 </html>
