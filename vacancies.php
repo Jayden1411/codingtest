@@ -37,7 +37,7 @@
 						</div>
 						<div class="row"style="background: #e8e6d2;">
 						      <div class="card-title  col-6">Salary&nbsp;&nbsp;&nbsp;&nbsp;
-							<?php echo $vacancies[$x]->salary_min." to ". $vacancies[$x]->salary_max;?>
+							<?php echo $vacancies[$x]->salary_min." - ". $vacancies[$x]->salary_max;?>
 						     </div>
 						      <div class="card-title  col-6">Expiry Date:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->expiry_date ?></div>
 						</div>
