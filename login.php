@@ -14,11 +14,11 @@
 ?> 							  
 			
 	<div class="card-body col-10 offset-1 ">
-	<div class="alert alert-danger">
+	<div class="">
 	<?php
 		if (!empty($_REQUEST['validations']))
 		{
-			echo $_REQUEST['validations'];
+			echo "<li class='alert alert-danger' ".$_REQUEST['validations']."</li>";
 		}
 	?>						
 	</div>
