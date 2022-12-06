@@ -22,7 +22,7 @@
 				     ?>				 
 				 <div class="card justify-content-center">
 					  <div class="card-body">
-					    <h5 class="card-title"><a href="#"class="click-call"data-id="<?php echo $vacancies[$x]->company_ref; ?>"><?php echo $vacancies[$x]->company_ref; ?></a></h5>
+					    <h5 class="card-title"><a href="#"class="click-call"data-id="<?php echo $vacancies[$x]->company_ref; ?>"><?php echo ucwords($vacancies[$x]->company_ref); ?></a></h5>
 					    <h6 class="card-title">Ref:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->vacancy_ref ?></h6>
 					    <h6 class="card-title">Title:&nbsp;&nbsp;&nbsp;&nbsp;
 					    <a href="https://webapp.placementpartner.com/wi/application_form.php?id=<?php echo$vacancies[$x]->company_ref ?>&vacancy_ref=<?php echo $vacancies[$x]->vacancy_ref ?>&source=assessment"target="blank"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call">
