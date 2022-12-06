@@ -26,23 +26,23 @@
 				 <div class="card justify-content-center col-10 offset-1">
 					  <div class="card-body">
 					    <div class="card-header row">
-					    <a href="#"class="click-call"data-id="<?php echo $vacancies[$x]->company_ref; ?>"><?php echo ucwords($vacancies[$x]->company_ref); ?></a></h5>
+					    <a href="#"class="click-call"data-id="<?php echo $vacancies[$x]->company_ref; ?>"><strong><?php echo ucwords($vacancies[$x]->company_ref); ?></strong></a></h5>
 					    </div>
 					     <div class="row"style="background: #e8e6d2;">
-						      <div class="card-title  col-6">Title&nbsp;&nbsp;&nbsp;&nbsp;
+						      <div class="card-title  col-6"><strong>Title:</strong>&nbsp;&nbsp;&nbsp;&nbsp;
 							<a href="https://webapp.placementpartner.com/wi/application_form.php?id=<?php echo$vacancies[$x]->company_ref ?>&vacancy_ref=<?php echo $vacancies[$x]->vacancy_ref ?>&source=assessment"target="blank"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call">
 								<?php echo $vacancies[$x]->job_title;  ?></a>
 						     </div>
-						      <div class="card-title  col-6">Reference:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->vacancy_ref ?></div>
+						      <div class="card-title  col-6"><strong>Reference:</strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->vacancy_ref ?></div>
 						</div>
 						<div class="row"style="background: #e8e6d2;">
-						      <div class="card-title  col-6">Salary&nbsp;&nbsp;&nbsp;&nbsp;
+						      <div class="card-title  col-6"><strong>Salary:</strong>&nbsp;&nbsp;&nbsp;&nbsp;
 							<?php echo $vacancies[$x]->salary_min." - ". $vacancies[$x]->salary_max;?>
 						     </div>
-						      <div class="card-title  col-6">Expiry Date:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->expiry_date ?></div>
+						      <div class="card-title  col-6"><strong>Expiry Date:</strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->expiry_date ?></div>
 						</div>
 					   	<p class="card-text">
-							Location:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->town ?> &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->region ?>
+							<strong>Location:</strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->town ?> &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->region ?>
 						</p>		    
 					    
 					 <p class="card-text">
