@@ -30,7 +30,7 @@
 					    <h6 class="card-title">Expiry:&nbsp;&nbsp;<?php echo $vacancies[$x]->expiry_date;  ?></h6>
 					    <p class="card-text">
 						<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),0,100);?>
-						<span id="dots"></span><span id="<?php echo $x;?>">
+						<span id="dots"></span><span id="<?php echo $x;?>"style="display:none;">
 						<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),101,10000);?></span>
 					     
 						     <?php if(strlen($vacancies[$x]->brief_description) > 50){?>
