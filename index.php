@@ -80,9 +80,11 @@ $_GET['p'] = "vacancies";}
         <i class='bx bx-menu sidebarBtn'></i>
         <span class="dashboard">Dashboard</span>
       </div>
-      <div class="search-box">
-        <input type="text" placeholder="Search...">
-        <i class='bx bx-search' ></i>
+      <form action="?p=search"method="POST">
+      <div class="search-box">		
+		<input type="text" name="search" placeholder="Search..." required>
+		<button type="submit"class="btn btn-sm"><i class='bx bx-search' ></i></button>
+	</form>
       </div>
       <div class="">
            <?php
