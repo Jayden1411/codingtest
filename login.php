@@ -18,7 +18,7 @@
 	<?php
 		if (!empty($_REQUEST['validations']))
 		{
-			echo "<li class='alert alert-danger' ".$_REQUEST['validations']."</li>";
+			echo "<li class='alert alert-danger'>".$_REQUEST['validations']."</li>";
 		}
 	?>						
 	</div>
