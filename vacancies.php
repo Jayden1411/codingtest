@@ -37,11 +37,13 @@
 						</div>
 						<div class="row"style="background: #e8e6d2;">
 						      <div class="card-title  col-6">Salary&nbsp;&nbsp;&nbsp;&nbsp;
-							<?php echo $vacancies[$x]->salary_max." to ". $vacancies[$x]->salary_max;?>
+							<?php echo $vacancies[$x]->salary_min." to ". $vacancies[$x]->salary_max;?>
 						     </div>
 						      <div class="card-title  col-6">Expiry Date:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->expiry_date ?></div>
 						</div>
-					   			    
+					   	<p class="card-text">
+							Location:&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->town ?> &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->region ?>
+						</p>		    
 					    
 					 <p class="card-text">
 					<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),0,110);?>
