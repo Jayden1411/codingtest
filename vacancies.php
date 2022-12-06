@@ -45,7 +45,7 @@
 							<strong>Location:</strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->town ?> &nbsp;&nbsp;-&nbsp;&nbsp;<?php echo $vacancies[$x]->region ?>
 						</p>		    
 					    
-					 <p class="card-text">
+					 <p class="card-text"><strong>Brief Description</strong><br>
 					<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),0,110);?>
 					<span id="dots"></span>
 					<span id="<?php echo $vacancies[$x]->vacancy_ref;?>"style="display:none;">
