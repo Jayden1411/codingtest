@@ -46,10 +46,10 @@
 						</p>		    
 					    
 					 <p class="card-text"><strong>Brief Description</strong><br>
-					<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),0,110);?>
+					<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),0,108);?>
 					<span id="dots"></span>
 					<span id="<?php echo $vacancies[$x]->vacancy_ref;?>"style="display:none;">
-					<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),110,10000);?></span>
+					<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),109,10000);?></span>
 				     
 					<?php if(strlen($vacancies[$x]->brief_description) > 110){?>
 						<?php echo '<button class="btn btn-link btn-sm" id="myBtn'.$vacancies[$x]->vacancy_ref.'" onClick=myFunction("' .$vacancies[$x]->vacancy_ref. '");return false;>more</button>';
