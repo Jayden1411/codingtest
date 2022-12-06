@@ -28,7 +28,7 @@
 					{
 						$data=  json_decode($_REQUEST['validations']);
 						foreach($data as $error){
-						      echo "<li class='alert alert-danger' ".$error."</li>";
+						      echo "<li class='alert alert-danger'> ".$error."</li>";
 						}
 					}
 					?>						
