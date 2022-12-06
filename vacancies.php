@@ -28,8 +28,7 @@
 					    <a href="#"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call">
 					    <?php echo $vacancies[$x]->job_title;  ?></a></h6>
 					    <h6 class="card-title">Expiry:&nbsp;&nbsp;<?php echo $vacancies[$x]->expiry_date;  ?></h6>
-					    <p class="card-text"><?php echo html_entity_decode($vacancies[$x]->brief_description ) ?>
-							<?php echo html_entity_decode($vacancies[$x]->brief_description)   ?></p>											 
+					    <p class="card-text"><?php echo html_entity_decode($vacancies[$x]->brief_description ) ?></p>											 
 						<a href="https://webapp.placementpartner.com/wi/application_form.php?id=<?php echo $vacancies[$x]->company_ref ?>&vacancy_ref=<?php echo $vacancies[$x]->vacancy_ref ?>&source=assessment"target="blank"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call btn btn-info btn-sm">
 						   Apply Here
 						</a>
