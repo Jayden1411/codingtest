@@ -52,6 +52,12 @@ $_GET['p'] = "vacancies";}
             <span class="links_name">Login</span>
           </a>
         </li>  
+	<li>
+          <a href="?p=login">
+            <i class='bx bx-log-out'></i>
+              <span class="links_name">Register</span>
+          </a>
+        </li> 
    	<?php
 	}else{?>
 	<li class="">
@@ -85,11 +91,7 @@ $_GET['p'] = "vacancies";}
           <a href="?p=login">
                 <span class="btn btn-secondary">Login</span>
           </a>
- 
-          <a href="?p=register">
-                <span class="btn btn-secondary">Register</span>
-          </a>
-     
+
    	<?php
 	}else{?>
           <a href="?p=vacancies">
