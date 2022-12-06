@@ -63,7 +63,28 @@ class ApiData
 			return 'error found';
 		}
 	}
-	
+	public static function getSearch($method, $filter)
+	{
+		try
+		{
+			$wsdl = "https://webapp.placementpartner.com/ws/clients/?wsdl";
+			$username = 'parallel';
+			$password = 'parallel';
+			$client = new SoapClient($wsdl, array('cache_wsdl' => WSDL_CACHE_NONE) );
+			$session_id = $client->login($username, $password);
+			$php_filter = array(
+				array('field' => 'job_description', 'value' => $filter, 'operator' => 'exact')
+				//array('field' => 'job_title', 'value' => 'SALES', 'operator' => 'exact')
+			);
+			return $client->$method($session_id, $php_filter);
+		}
+		catch(Exception $e)
+		{
+			//echo $message = $e->getMessage();
+			//echo 'Error getting data, check your connection';
+			return 'error found';
+		}
+	}
 	public static function updateApiData($dbh, $vacancies)
 	{
 		try
