@@ -49,6 +49,23 @@
 				  ?>
 	   
 		</div>
-
+<script>
+function myFunction(id) {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById(id);
+  var btnText = document.getElementById("myBtn");
+  var moreX = document.getElementById("more");
+  console.log(dots.style.display);
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
  </body>
 </html>
