@@ -22,6 +22,10 @@
 					  ';
 				    }else{
 				     for($x = 0; $x < count($vacancies); $x++){
+					$date1 = DateTime::createFromFormat('Y-m-d', $vacancies[$x]->start_date);
+					$date2 = DateTime::createFromFormat('Y-m-d', date("Y-m-d"));
+					$diff=date_diff($date2,$date1);
+					$days= (abs($diff->format("%R%a")) > 1) ?  abs($diff->format("%R%a"))." days ago" :  abs($diff->format("%R%a"))." day";
 				     ?>				 
 				 <div class="card justify-content-center col-12">
 					  <div class="card-body">
@@ -45,16 +49,18 @@
 							<strong>Location:</strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->town ?> &nbsp;&nbsp;-&nbsp;&nbsp;<?php echo $vacancies[$x]->region ?>
 						</p>		    
 					    
-					 <p class="card-text"><strong>Brief Description</strong><br>
-					<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),0,108);?>
-					<span id="dots"></span>
-					<span id="<?php echo $vacancies[$x]->vacancy_ref;?>"style="display:none;">
-					<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),109,10000);?></span>
-				     
-					<?php if(strlen($vacancies[$x]->brief_description) > 110){?>
-						<?php echo '<button class="btn btn-link btn-sm" id="myBtn'.$vacancies[$x]->vacancy_ref.'" onClick=myFunction("' .$vacancies[$x]->vacancy_ref. '");return false;>more</button>';
-					 }?>
-					 
+						 <p class="card-text"><strong>Brief Description</strong><br>
+						<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),0,108);?>
+						<span id="dots"></span>
+						<span id="<?php echo $vacancies[$x]->vacancy_ref;?>"style="display:none;">
+						<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),109,10000);?></span>
+
+						<?php if(strlen($vacancies[$x]->brief_description) > 110){?>
+							<?php echo '<button class="btn btn-link btn-sm" id="myBtn'.$vacancies[$x]->vacancy_ref.'" onClick=myFunction("' .$vacancies[$x]->vacancy_ref. '");return false;>more</button>';
+						 }?>
+						 <p class="card-text">
+						   <?php echo $days; ?>
+						</p>
 						     
 						<p class="card-text">
 						<a href="https://webapp.placementpartner.com/wi/application_form.php?id=<?php echo $vacancies[$x]->company_ref ?>&vacancy_ref=<?php echo $vacancies[$x]->vacancy_ref ?>&source=assessment"target="blank"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call btn btn-info btn-sm">
