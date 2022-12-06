@@ -105,7 +105,7 @@ $_GET['p'] = "vacancies";}
 
 
 
-    <div class="home-content">
+    <div class="home-content"style="background: purple;">
       <div class="overview-boxes">      
 		
       </div>
