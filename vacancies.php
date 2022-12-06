@@ -28,10 +28,19 @@
 					    <a href="#"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call">
 					    <?php echo $vacancies[$x]->job_title;  ?></a></h6>
 					    <h6 class="card-title">Expiry:&nbsp;&nbsp;<?php echo $vacancies[$x]->expiry_date;  ?></h6>
-					    <p class="card-text"><?php echo html_entity_decode($vacancies[$x]->brief_description ) ?></p>											 
+					    <p class="card-text">
+						<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),0,100);?>
+						<span id="dots"></span><span id="<?php echo $x;?>">
+						<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),101,10000);?></span>
+					     
+						     <?php if(strlen($vacancies[$x]->brief_description) > 50){?>
+							<button onclick="myFunction(<?php echo $x; ?>)" id="myBtn"class="btn btn-link">............</button></p>
+						     <?php } ?>
+						       <p class="card-text">
 						<a href="https://webapp.placementpartner.com/wi/application_form.php?id=<?php echo $vacancies[$x]->company_ref ?>&vacancy_ref=<?php echo $vacancies[$x]->vacancy_ref ?>&source=assessment"target="blank"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call btn btn-info btn-sm">
 						   Apply Here
 						</a>
+						</p>
 					  </div>
 				</div>
 				   <?php 
