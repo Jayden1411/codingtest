@@ -29,7 +29,7 @@
 				     ?>				 
 				 <div class="card justify-content-center col-12">
 					  <div class="card-body">
-					    <<div class="card-header row">
+					    <div class="card-header row">
 					    <p style="font-size:16px;color:red;"><?php echo $vacancies[$x]->job_title; ?></p>
 					    </div>
 					     <div class="row"style="background: #e8e6d2;">
