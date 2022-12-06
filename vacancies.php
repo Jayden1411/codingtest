@@ -50,7 +50,7 @@
 					<?php echo substr(html_entity_decode($vacancies[$x]->brief_description),110,10000);?></span>
 				     
 					<?php if(strlen($vacancies[$x]->brief_description) > 110){?>
-						<?php echo '<a href= "#" id="myBtn'.$vacancies[$x]->vacancy_ref.'" onClick=myFunction("' .$vacancies[$x]->vacancy_ref. '");>more</a>';
+						<?php echo '<button class="btn btn-link btn-sm" id="myBtn'.$vacancies[$x]->vacancy_ref.'" onClick=myFunction("' .$vacancies[$x]->vacancy_ref. '");return false;>more</button>';
 					 }?>
 					 
 						     
