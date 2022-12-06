@@ -23,7 +23,7 @@
 				    }else{
 				     for($x = 0; $x < count($vacancies); $x++){
 				     ?>				 
-				 <div class="card justify-content-center col-10 offset-1">
+				 <div class="card justify-content-center col-12">
 					  <div class="card-body">
 					    <div class="card-header row">
 					    <a href="#"class="click-call"data-id="<?php echo $vacancies[$x]->company_ref; ?>"><strong><?php echo ucwords($vacancies[$x]->company_ref); ?></strong></a></h5>
