@@ -22,13 +22,13 @@
 			<div class="col-10 offset-1">
 			    <div class="card ">
 				<div class="card-header">Register</div>	
-				<div class="alert alert-danger">
+				<div class="">
 					<?php
 					if (!empty($_REQUEST['validations']))
 					{
 						$data=  json_decode($_REQUEST['validations']);
 						foreach($data as $error){
-							echo "<br>error:-> ".$error;
+						      echo "<li class='alert alert-danger' ".$error."</li>";
 						}
 					}
 					?>						
