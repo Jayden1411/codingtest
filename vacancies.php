@@ -29,13 +29,13 @@
 				     ?>				 
 				 <div class="card justify-content-center col-12">
 					  <div class="card-body">
-					    <div class="card-header row">
-					    <a href="#"class="click-call"data-id="<?php echo $vacancies[$x]->company_ref; ?>"><strong><?php echo ucwords($vacancies[$x]->company_ref); ?></strong></a></h5>
+					    <<div class="card-header row">
+					    <p style="font-size:16px;color:red;"><?php echo $vacancies[$x]->job_title; ?></p>
 					    </div>
 					     <div class="row"style="background: #e8e6d2;">
-						      <div class="card-title  col-6"><strong>Title:</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+						      <div class="card-title  col-6">
 							<a href="https://webapp.placementpartner.com/wi/application_form.php?id=<?php echo$vacancies[$x]->company_ref ?>&vacancy_ref=<?php echo $vacancies[$x]->vacancy_ref ?>&source=assessment"target="blank"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call">
-								<?php echo $vacancies[$x]->job_title;  ?></a>
+								<strong><?php echo ucwords($vacancies[$x]->company_ref); ?></strong></a>
 						     </div>
 						      <div class="card-title  col-6"><strong>Reference:</strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->vacancy_ref ?></div>
 						</div>
