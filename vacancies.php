@@ -49,8 +49,8 @@
 						</div>
 						</div>
 					    <!--col end -->
-					   <div class="col-2"style="background: white;"><!--col2 start -->
-						<img src="images/iucn.png" alt="Logo"style="width:90px;height:80px;"/>
+					    <div class="col-2" style="background: white;float:left;"><!--col2 start -->
+						<p style="float:left;clear:both;overflow:auto;"><img src="images/jjs.png" alt="Logo"style="width:100px;height:auto;"/></p>
 					    </div>
 					    <!--col end -->					
 					</div>
