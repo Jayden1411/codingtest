@@ -48,7 +48,7 @@
 		    <tr>
 			<th scope="col">Vacancy Ref</th>					
 			<th scope="col">Job Title</th>					
-			<th scope="col">Salary Max</th>
+			<th scope="col">Salary</th>
 			<th scope="col">ExpiryDate</th>
 			<th scope="col"style="text-align:center">Views</th>
 		    </tr>
@@ -76,7 +76,7 @@
 			     ?>
 			      <td><?php echo $vacancies[$x]->vacancy_ref; ?> </td>
 			      <td><?php echo $vacancies[$x]->job_title;  ?></td>
-			      <td><?php echo $vacancies[$x]->salary_max;  ?></td>
+			      <td><?php echo $vacancies[$x]->salary_min;  ?> - <?php echo $vacancies[$x]->salary_max;  ?></td>
 			      <td><?php echo $vacancies[$x]->expiry_date;  ?></td>
 			      <td style="text-align:center">
 					<?php echo $clicks['clicks'];?>
