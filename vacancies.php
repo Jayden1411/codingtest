@@ -73,11 +73,17 @@
 						   <?php echo $days; ?>
 						</p>
 						     
-						<p class="card-text">
-						<a href="https://webapp.placementpartner.com/wi/application_form.php?id=<?php echo $vacancies[$x]->company_ref ?>&vacancy_ref=<?php echo $vacancies[$x]->vacancy_ref ?>&source=assessment"target="blank"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call btn btn-info btn-sm">
-						   Apply Here
-						</a>
-						</p>
+						<div class="row"style="background:;">
+						      <div class="col-6"><strong>
+						        <a href="?p=vacancy_spec&company_ref=<?php echo $vacancies[$x]->company_ref ?>&vacancy_ref=<?php echo $vacancies[$x]->vacancy_ref ?>"target="blank"class="click-call btn btn-info">
+							   Full Details
+						       </a>
+						     	<a  href="https://webapp.placementpartner.com/wi/application_form.php?id=<?php echo $vacancies[$x]->company_ref ?>&vacancy_ref=<?php echo $vacancies[$x]->vacancy_ref ?>&source=assessment"target="blank"data-id="<?php echo $vacancies[$x]->vacancy_ref; ?>"class="click-call btn btn-info">
+							   Apply Here
+							</a>
+						      </div>
+						      <div class="card-title  col-6"> </div>
+						</div>   
 						
 						
 					  </div>
