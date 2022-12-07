@@ -55,7 +55,7 @@
 					    <!--col end -->					
 					</div>
 					<!--row end -->    
-						
+						<hr>
 					   	<p class="card-text">
 							<strong>Location:</strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->town ?> &nbsp;&nbsp;-&nbsp;&nbsp;<?php echo $vacancies[$x]->region ?>
 						</p>		    
