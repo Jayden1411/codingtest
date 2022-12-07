@@ -52,14 +52,14 @@ $_GET['p'] = "vacancies";}
             <span class="links_name">Login</span>
           </a>
         </li>  
+  	<?php
+	}else{?>
 	<li>
-          <a href="?p=login">
+          <a href="?p=register">
             <i class='bx bx-log-out'></i>
               <span class="links_name">Register</span>
           </a>
         </li> 
-   	<?php
-	}else{?>
 	<li class="">
           <a href="?p=vacancies">
             <i class='bx bx-log-out'></i>
