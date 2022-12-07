@@ -28,7 +28,9 @@
 					$days= (abs($diff->format("%R%a")) > 1) ?  abs($diff->format("%R%a"))." days ago" :  abs($diff->format("%R%a"))." day";
 				     ?>				 
 				 <div class="card justify-content-center col-12">
-					  <div class="card-body">
+					<div class="card-body">
+					<div class="row col-sm-12 p-0"style="border:2px solid #999"><!--row start -->				
+					    <div class="col-10"><!--col1 start -->
 					   <div class="card-header row"style="background: #af2b0f;">
 					    <p style="font-size:18px;color:white;"><?php echo $vacancies[$x]->job_title; ?></p>
 					    </div>
@@ -45,6 +47,15 @@
 						     </div>
 						      <div class="card-title  col-6"><strong>Expiry Date:</strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->expiry_date ?></div>
 						</div>
+						</div>
+					    <!--col end -->
+					   <div class="col-2"style="background: white;"><!--col2 start -->
+						<img src="images/iucn.png" alt="Logo"style="width:90px;height:80px;"/>
+					    </div>
+					    <!--col end -->					
+					</div>
+					<!--row end -->    
+						
 					   	<p class="card-text">
 							<strong>Location:</strong>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $vacancies[$x]->town ?> &nbsp;&nbsp;-&nbsp;&nbsp;<?php echo $vacancies[$x]->region ?>
 						</p>		    
